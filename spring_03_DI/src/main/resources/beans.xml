@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+    <bean id="address" class="cn.jinronga.demo01.Address">
+        <property name="address" value="中国江西"/>
+    </bean>
+    <!--    Bean注入 引用值用ref-->
+    <bean id ="student" class="cn.jinronga.demo01.Student">
+        <property name="name" value="金融融融融果果"/>
+        <property name="address" ref="address"/>
+        <property name="books">
+            <array>
+                <value>语文</value>
+                <value>数学</value>
+                <value>英语</value>
+                <value>政治</value>
+            </array>
+        </property>
+        <property name="hobbys">
+            <list>
+                <value>听歌</value>
+                <value>弹吉他</value>
+                <value>看电影</value>
+                <value>看电视剧</value>
+            </list>
+        </property>
+
+      <property name="games">
+          <set>
+              <value>LOL</value>
+              <value>王者荣耀</value>
+              <value>刺激战场</value>
+          </set>
+      </property>
+        <property name="wife"><null/></property>
+
+        <property name="properties">
+            <props>
+                <prop key="学号">20200426</prop>
+                <prop key="性别">男</prop>
+                <prop key="姓名">小明</prop>
+            </props>
+        </property>
+
+     </bean>
+
+    <!--P(属性: properties)命名空间 , 属性依然要设置set方法-->
+    <bean id="user" class="cn.jinronga.demo01.User" p:name="金融啊" p:age="18"/>
+
+</beans>

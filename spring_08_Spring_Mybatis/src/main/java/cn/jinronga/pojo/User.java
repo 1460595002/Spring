@@ -1,0 +1,20 @@
+package cn.jinronga.pojo;
+
+import lombok.Data;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: 郭金荣
+ * Date: 2020/4/29 0029
+ * Time: 22:10
+ * E-mail:1460595002@qq.com
+ * 类说明:
+ */
+@Data
+public class User {
+    private int id;
+    private String name;//姓名
+    private String pwd;//密码
+
+
+}

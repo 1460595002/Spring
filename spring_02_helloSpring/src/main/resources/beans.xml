@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--    bean就是java对象只不过交给Spring创建跟管理-->
+    <bean id="hello" class="cn.jinronga.demo01.Hello">
+        <!--        给属性name赋值  -->
+        <property name="name" value="Spring"/>
+    </bean>
+
+    <bean id="user" class="cn.jinronga.demo01.User">
+        <property name="name" value="金融融融融果果"/>
+    </bean>
+    <alias name="userT" alias="userNew"/>
+
+    <bean id="userT" class="cn.jinronga.demo01.UserT">
+        <constructor-arg name="name" value="金融融融融果果"/>
+    </bean>
+</beans>
