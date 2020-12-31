@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring_08_Spring_Mybatis" />
+        <module name="spring_08_AOP" />
+        <module name="spring_04_Autowire" />
+        <module name="spring_09_transaction" />
+        <module name="spring_06_javaConfig" />
+        <module name="spring_01_ioc1" />
+        <module name="spring_05_Annotation" />
+        <module name="spring_07_Proxy" />
+        <module name="spring_02_helloSpring" />
+        <module name="spring_03_DI" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="Sping" target="1.5" />
+      <module name="spring_01_ioc1" target="1.5" />
+      <module name="spring_02_helloSpring" target="1.5" />
+      <module name="spring_03_DI" target="1.5" />
+      <module name="spring_04_Autowire" target="1.5" />
+      <module name="spring_05_Annotation" target="1.5" />
+      <module name="spring_06_javaConfig" target="1.5" />
+      <module name="spring_07_Proxy" target="6" />
+      <module name="spring_08_AOP" target="6" />
+      <module name="spring_08_Spring_Mybatis" target="1.5" />
+      <module name="spring_09_transaction" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
